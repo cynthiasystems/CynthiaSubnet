@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "CynthiaSubnet"
+version = "0.1.0"
+description = "A Bittensor subnet implementation for advanced AI-powered search and discovery"
+authors = ["Cynthia Systems <info@cynthiasystems.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "CynthiaSubnet"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = ">=2.0.0"
+transformers = "^4.35.0"
+bittensor = {extras = ["torch"], version = "^6.0.0"}
+wandb = "^0.15.0"
+loguru = "^0.7.0"
+pydantic = "^2.0.0"
+typer = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.0.0"
+isort = "^5.12.0"
+pytest = "^7.3.0"
+pytest-cov = "^4.1.0"
+mypy = "^1.5.1"
+pre-commit = "^3.4.0"
+ruff = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "B", "I", "N", "UP", "PL", "RUF"]
+ignore = ["E501"]
+
+[tool.mypy]
+python_version = "3.9"
+ignore_missing_imports = true
+check_untyped_defs = true
