@@ -2,6 +2,8 @@
 
 A Bittensor subnet implementation for Cynthia Systems that revolutionizes AI-powered search and discovery through decentralized cognitive search, delivering unparalleled performance, trust, and scalability.
 
+![Cynthia Subnet](docs/CynthiaSubnet.jpg)
+
 ## Overview
 
 CynthiaSubnet leverages Bittensor's decentralized network to create a powerful search and discovery infrastructure. The subnet validates and rewards nodes based on search relevance, response latency, and result consistency.
