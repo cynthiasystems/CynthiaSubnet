@@ -5,26 +5,26 @@ description = "A Bittensor subnet implementation for advanced AI-powered search 
 authors = ["Cynthia Systems <info@cynthiasystems.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "CynthiaSubnet"}]
+packages = [{include = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
-torch = ">=2.0.0"
-transformers = "^4.35.0"
-bittensor = {extras = ["torch"], version = "^6.0.0"}
-wandb = "^0.15.0"
-loguru = "^0.7.0"
-pydantic = "^2.0.0"
-typer = "^0.9.0"
+python = "^3.12"
+torch = "^2.5.1"
+transformers = "^4.46.1"
+bittensor = {extras = ["torch"], version = "^8.2.0"}
+wandb = "^0.18.5"
+loguru = "^0.7.2"
+pydantic = "^2.9.2"
+typer = "^0.12.5"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.0.0"
-isort = "^5.12.0"
-pytest = "^7.3.0"
-pytest-cov = "^4.1.0"
-mypy = "^1.5.1"
-pre-commit = "^3.4.0"
-ruff = "^0.1.0"
+black = "^24.10.0"
+isort = "^5.13.2"
+pytest = "^8.3.3"
+pytest-cov = "^6.0.0"
+mypy = "^1.13.0"
+pre-commit = "^4.0.1"
+ruff = "^0.7.1"
 
 [build-system]
 requires = ["poetry-core"]
@@ -45,6 +45,6 @@ select = ["E", "F", "B", "I", "N", "UP", "PL", "RUF"]
 ignore = ["E501"]
 
 [tool.mypy]
-python_version = "3.9"
+python_version = "3.12"
 ignore_missing_imports = true
 check_untyped_defs = true
